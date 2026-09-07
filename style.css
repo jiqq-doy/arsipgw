@@ -250,7 +250,7 @@ h4,
     background-size: cover;
     background-repeat: no-repeat;
     /* Maintain visual treatment: dark, muted, blurred, and warm */
-    filter: grayscale(70%) sepia(30%) hue-rotate(-10deg) brightness(0.4) blur(4px);
+    filter: grayscale(100%) sepia(30%) hue-rotate(-10deg) brightness(0.3) blur(6px);
 }
 
 .hero-slide.bg-a {
@@ -282,7 +282,7 @@ h4,
 .track-slow .hero-slide {
     transform: scale(1.1);
     /* Subtle depth / parallax scale */
-    filter: grayscale(90%) sepia(40%) hue-rotate(-10deg) brightness(0.3) blur(8px);
+    filter: grayscale(90%) brightness(0.25) blur(8px);
     /* Deeper blur for background */
 }
 
@@ -512,7 +512,7 @@ h4,
     mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
     mask-composite: intersect;
     display: block;
-    transform: translate(-5%, -10%);
+    transform: translate(5%, -10%);
     /* Geser ke kiri dikit dan naikin 25% biar kepala sampe garis merah */
 }
 
@@ -1090,7 +1090,7 @@ h4,
     text-align: center;
     background: linear-gradient(to bottom, #0a0a0a 0%, #000000 100%);
     font-family: var(--font-sans);
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     color: #666;
     text-transform: uppercase;
     letter-spacing: 1px;
