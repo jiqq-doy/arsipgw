@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheArchive-5926</title>
+    <link rel="stylesheet" href="style.css?v=23">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;900&family=Montserrat:wght@200;900&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Mencegah browser melakukan scroll restoration otomatis
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+    </script>
+</head>
+
+<body>
+    <!-- Intro Curtain -->
+    <div id="intro-curtain" class="intro-curtain">
+        <p class="intro-text">a collection of moments.</p>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Audio Player -->
+    <audio id="ambient-audio" loop>
+        <source src="images/backsound.mp3" type="audio/mpeg">
+    </audio>
+    <button id="audio-toggle" class="audio-toggle" aria-label="Toggle Audio">
+        <i data-lucide="volume-x" id="audio-icon"></i>
+    </button>
+
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section id="home" class="hero">
+            <div class="hero-bg-container entrance-bg">
+                <!-- Slow Background Layer -->
+                <div class="hero-track track-slow">
+                    <div class="hero-slide bg-a"></div>
+                    <div class="hero-slide bg-b"></div>
+                    <div class="hero-slide bg-a"></div>
+                    <div class="hero-slide bg-b"></div>
+                </div>
+                <!-- Faster Foreground Layer -->
+                <div class="hero-track track-fast">
+                    <div class="hero-slide bg-a"></div>
+                    <div class="hero-slide bg-b"></div>
+                    <div class="hero-slide bg-a"></div>
+                    <div class="hero-slide bg-b"></div>
+                </div>
+                <!-- Dark Overlay for Typography Focus -->
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h2 class="hero-subtitle">WELCOME TO</h2>
+                <h1 class="hero-title">THE ARCHIVE</h1>
+                <p class="hero-whisper">- Of A Thousand Moments -</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Tentang Saya -->
+        <section id="tentang" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image fade-up">
+                        <img src="images/IMG_2643.jpg" alt="Ajiq" class="about-photo">
+                    </div>
+                    <div class="about-text">
+                        <!-- Judul: muncul pertama, threshold rendah -->
+                        <h2 class="section-title fade-up">Kenalin, gw ajiq</h2>
+
+                        <!-- 3 Paragraf utama: muncul berurutan ketika section di tengah -->
+                        <p class="fade-up-late" data-stagger="1">Gw orangnya suka banget sama yang namanya "explore",
+                            gampang penasaran sama
+                            sesuatu yang belom pernah
+                            gw coba atau tempat yang belom pernah gw datengin. Rasanya selalu ada aja hal yang pengen gw
+                            liat, rasain, dan coba sendiri.</p>
+
+                        <p class="fade-up-late" data-stagger="2">Gw suka alam. Gw suka gunung, laut, langit, senja,
+                            bahkan hal-hal kecil
+                            yang kadang
+                            orang lain mungkin nggak terlalu notice. Ada rasa tenang tiap kali gw bisa jauh sebentar
+                            dari keramaian.</p>
+
+                        <p class="fade-up-late" data-stagger="3">Gunung jadi salah satu tempat yang paling gw suka.
+                            Bukan cuma karena
+                            puncaknya, atau view-nya yang indah, tapi karena selalu ada cerita di balik perjuangan
+                            buat sampai ke puncaknya. Tentang kaki yang terus dipaksa melangkah,
+                            tentang tawa dan obrolan di tengah perjalanan, sampai dengan orang yang sama-sama
+                            berjuang bareng gw.</p>
+
+                        <!-- Garis merah — konten di bawah ini muncul ketika elemen tsb masuk viewport sendiri -->
+                        <blockquote class="about-quote fade-up-scroll">
+                            "Buat gw, puncak bukan cuma soal tempat yang akhirnya berhasil dicapai. Puncak adalah hasil
+                            dari semua langkah, lelah, perjuangan, dan cerita sepanjang perjalanan."
+                        </blockquote>
+
+                        <p class="fade-up-scroll">Dan mungkin justru itu yang bikin setiap gunung selalu punya cerita
+                            yang
+                            beda. Salah satu momen yang paling nempel di kepala gw ketika pertama kali liat golden
+                            sunset di 3.000 mdpl. Dari situ gw makin suka sama gunung. Di tempat
+                            setinggi itu, gw cuma bisa diem, liat langit berubah warna, dan ngerasa... ternyata hidup
+                            nggak harus selalu buru-buru.</p>
+
+                        <!-- <p class="fade-up-scroll">Buat gw, alam itu ibarat tempat buat "recharge". Tempat buat kabur
+                            sebentar,
+                            mikir, atau nggak mikirin apa-apa sama sekali. Tapi di sisi lain, gw juga
+                            bukan tipe orang yang pengen sendirian terus. Gw seneng berteman, ngobrol, ketemu orang
+                            baru, bercanda, dan bikin cerita bareng. Karena menurut gw, beberapa pengalaman terbaik
+                            justru jadi jauh lebih berarti kalau ada orang lain yang ikut di dalamnya.</p> -->
+
+                        <p class="fade-up-scroll">Saat ini, gw masih pengen explore lebih jauh. Masih banyak tempat yang
+                            belom
+                            sempet
+                            gw kunjungin, dan mungkin yang lebih penting explore tentang diri gw sendiri. Gw belom
+                            tau bakal jadi apa nantinya, tapi yang gw tau, gw cuma pengen terus jalan, liat lebih
+                            banyak tempat, ketemu lebih banyak orang, nyoba lebih banyak hal, dan ngumpulin lebih banyak
+                            cerita.</p>
+
+                        <p class="punchline-statement fade-up-scroll">Karena hidup bukan cuma soal seberapa jauh kita
+                            sampai.<br>Tapi tentang berapa banyak hal yang kita temuin sepanjang perjalanan.</p>
+
+                        <!-- <p class="punchline-statement end fade-up-scroll">Mungkin gw pergi bukan untuk menemukan tempat
+                            baru,
+                            tapi untuk menemukan kembali diri gw yang sempat hilang.</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section 3: Memories Story (Zig-Zag) -->
+        <section id="memories" class="memories-story">
+            <h2 class="memory-section-title fade-up">memories</h2>
+
+            <div class="container">
+                <!-- Edisi 1: Gunung Gede (Text Left, Image Right) -->
+                <div class="memory-story-row fade-up" data-number="01">
+                    <div class="memory-story-text">
+                        <h3>/2958 mdpl.</h3>
+                        <div class="story-scroll-container">
+                            <div class="story-scroll-inner">
+                                <p>Ini namanya Gede, gunung pertama yg gw daki, dan mungkin bisa dibilang dari sinilah
+                                    semuanya dimulai.</p>
+
+                                <p>sebelumnya gw pernah beberapa kali diajak sama temen gw buat naek
+                                    gunung yg ada di Jateng kayak Lawu, Merbabu, Slamet. Tapi selalu gw
+                                    tolak. Dulu gw mikir, “Ngapain naik gunung? Cape, keluar duit, buang waktu.
+                                    emng dapet apaan?” Mungkin karena waktu itu gw belom tau rasanya naik gunung.
+                                    Sampe pada akhirnya gw diajak lagi sama temen-temen gw buat naik dan waktu itu kita
+                                    lagi libur panjang, dan entah kenapa, kali ini gw bilang, “Yaudah gas.”
+                                    Ngga ada wacana, ngga ada cacicu, pesen tiket online, nyari basecamp, cabut.</p>
+
+                                <p>Kita total bertujuh. 3 orang dari Tangerang, 4 orang dari
+                                    Bekasi. Yang dari Tangerang kita tikum di rumah temen gw, Parpes.Singkat cerita hari
+                                    h pun
+                                    tiba. Gw jemput temen gw satu lagi, Jakwan namanya. abis itu langsung cabut ke
+                                    Parpes. Sampe sana sekitar jam 6 sore. Dirumah parpes kita santai dulu. Ngopi,
+                                    ngobrol,
+                                    main ML satu-dua match. Jam 8 malem teng, kita otw ke bogor.
+                                    Gw bonceng Jakwan, Parpes bawa motor sendiri. 4 temen kita yg dari
+                                    Bekasi udh duluan otw ke Bogor. Kita minta shareloc salah satu dari mereka, sebut
+                                    aja Aca.
+                                    Dia shareloc, Kita ikutin. Sepanjang jalan masih
+                                    santai, ngobrol, sesekali berenti buat istirahat. Sampe akhirnya kita udh
+                                    deket sama lokasi yg aca kirim, disini mulai janggal. gw mikir, “ni bogor kaga
+                                    dingin, kaga ada gunung nya juga, Basecamp juga kaga keliatan. masa iya nyasar?”
+                                    Posisi jam 10. Sampe akhirnya bokap Parpes nelpon, “Mas... kamu ngapain ke Bekasi?”
+                                    Nah bener kan nyasar. waktu itu jujur frustasi dikit, emosi campur ngakak, kita
+                                    duduk di trotoar jalan, tenangin diri, istirahat. Dan ya...mau gamau kita harus
+                                    sampe bc. Sampe akhirnya aca ngirim lokasi bc yg bener, barulah kita cabut</p>
+
+                                <p>Sampe di basecamp sekitar jam 2 pagi. Dan karna udh capek banget, kita nggak makan,
+                                    nggak ngobrol, nggak ngapa-ngapain. Langsung cari tempat tidur dan tepar. Subuhnya
+                                    bangun, salat, sarapan, terus siap-siap buat naik. Sekitar jam 8 pagi, akhirnya
+                                    pendakian pertama gw bener-bener dimulai. Awal-awal masih enak. Masih ngobrol,
+                                    becanda, ketawa-ketawa. Pokoknya suasananya masih kayak lagi jalan-jalan biasa. Tapi
+                                    makin lama jalan, baru deh mulai terasa. Kaki mulai berat, napas mulai berat,
+                                    ditambah di belakang ada carrier yg beratnya kayak punya masalah pribadi sama gw.
+                                    Akhirnya kita berhenti, buka nasi bungkus yg udh dibawa dari bawah, terus makan
+                                    rame-rame. Abis tenaga agak balik, lanjut lagi. Makin ke atas, trek mulai makin
+                                    nggak manusiawi. Batu, akar gede, tanjakan yg bikin dada ketemu dengkul. Buat orang
+                                    yg baru pertama kali naik gunung, gw cuma bisa mikir, “Oh... jadi ini yg dari
+                                    kemarin kalian ajak-ajak?” Tapi setelah perjalanan sekitar 7 jam, akhirnya kita
+                                    sampe di Surya Kencana. Dan begitu keluar ke area sabananya, gw langsung ngerti
+                                    kenapa orang-orang suka naik gunung. Hamparannya luas banget, udaranya dingin, dan
+                                    pemandangannya cakep dari mana pun dilihat. Gw langsung seneng banget. Kita
+                                    foto-foto dulu, karna ya namanya juga anak baru naik gunung. Belum sempet lima menit
+                                    liat pemandangan, udh sibuk nyari angle foto. Abis itu kita lanjut nyari tempat camp
+                                    yg deket sama mata air di Surya Kencana Timur. Nggak lama, dapet spot yg cocok. Kita
+                                    bangun tenda, masak sosis, bikin kopi, terus duduk bareng sambil nunggu sunset. Dan
+                                    sumpah, sunset sore itu cakep banget. Rasanya kayak semua capek yg dari tadi kita
+                                    bawa akhirnya dibayar lunas.</p>
+
+                                <p>Malemnya kita makan lagi, bikin mie sama telur. Abis itu masuk tenda dan nobar film
+                                    yg udh kita download dari bawah. Film selesai, yg lain mulai tidur. Tapi gw malah
+                                    keluar tenda. Gw duduk di kursi lipat sambil ngopi, terus liatin langit. Malem itu
+                                    langit lagi cerah banget. Dan untuk pertama kalinya dalam hidup gw, gw liat Milky
+                                    Way secara langsung. Bukan dari foto Instagram, bukan dari wallpaper HP, tapi
+                                    bener-bener ada di atas kepala gw. Dan entah kenapa, di situ gw cuma bisa diem.
+                                    Nggak ada yg perlu dipikirin, nggak ada yg perlu dikejar. Cuma duduk, ngopi, liatin
+                                    langit. Tenang banget. Gw bahkan nggak tau udh berapa lama duduk di luar waktu itu.
+                                    Tau-tau udh beberapa jam aja. Akhirnya gw masuk lagi ke tenda dan tidur.</p>
+
+                                <p>Jam 4 subuh kita bangun buat summit. Bawaannya cuma senter sama air, terus mulai
+                                    jalan dalam keadaan masih gelap. Singkat cerita, sekitar jam 6 pagi akhirnya kita
+                                    sampe di puncak. Dan sumpah, itu salah satu momen yg bikin gw bangga sama diri
+                                    sendiri. Karna gw nggak nyangka bakal bisa sampe sana. Gw yg dulu mikir naik gunung
+                                    cuma capek, buang waktu, buang duit, sekarang malah berdiri di puncaknya. Kita
+                                    foto-foto lagi, istirahat, liatin pemandangan, sambil ngerasain kaki yg udh mulai
+                                    minta pensiun. Tapi anehnya, capeknya beda. Ada rasa puas. Kayak semua langkah dari
+                                    bawah, semua tanjakan, semua napas yg ngos-ngosan, semuanya akhirnya punya alasan.
+                                </p>
+
+                                <p>Abis itu kita turun lagi. Sampe camp, kita beres-beres tenda, sarapan lagi, berak,
+                                    kencing, segala macem, pokoknya semua urusan diberesin sebelum turun. Sekitar jam 11
+                                    siang, akhirnya kita ninggalin Surya Kencana. Dan buat gw, Surken bukan cuma tempat
+                                    yg kebetulan gw datengin di pendakian pertama. Tempat itu ninggalin sesuatu yg sampe
+                                    sekarang masih gw inget. Ada perjalanan 7 jam, ada capek, ada tawa, ada sunset, ada
+                                    malem pertama liat Milky Way, ada rasa bangga waktu akhirnya bisa berdiri di puncak,
+                                    dan ada ketenangan yg waktu itu bahkan nggak gw tau kalau ternyata gw butuhin. Dari
+                                    Gunung Gede juga gw akhirnya ngerti, mungkin naik gunung emang capek dan kadang
+                                    bikin pengen nyerah. Tapi ternyata, justru di tengah capek itu ada hal-hal yg bikin
+                                    kita pengen balik lagi. See you next time, Surken.</p>
+
+
+                            </div>
+                            <div class="story-scroll-fade-top"></div>
+                            <div class="story-scroll-fade"></div>
+                        </div>
+                    </div>
+                    <div class="reveal-wrapper">
+                        <div class="memory-story-image slide-img active parallax-img"
+                            style="background-image: url('images/memories/gede/gede1.jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/gede/gede2.jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/gede/gede3.jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/gede/gede4.jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/gede/gede5.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/gede/gede6.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/gede/gede7.jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/gede/gede8.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/gede/gede9.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/gede/WhatsApp%20Image%202026-09-07%20at%2006.01.55%20(1).jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/gede/WhatsApp%20Image%202026-09-07%20at%2006.01.55.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/gede/WhatsApp%20Image%202026-09-07%20at%2006.01.56.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                    </div>
+                    <div class="memory-story-frame"></div>
+                </div>
+
+                <!-- Edisi 2: Gunung Sumbing (Image Left, Text Right) -->
+                <div class="memory-story-row reverse fade-up" data-number="02">
+                    <div class="memory-story-text">
+                        <h3>/3371 mdpl.</h3>
+                        <div class="story-scroll-container">
+                            <div class="story-scroll-inner">
+                                <p>— sabarr blom gw tulis —</p>
+                            </div>
+                            <div class="story-scroll-fade-top"></div>
+                            <div class="story-scroll-fade"></div>
+                        </div>
+                    </div>
+                    <div class="reveal-wrapper">
+                        <div class="memory-story-image slide-img active parallax-img"
+                            style="background-image: url('images/memories/sumbing/s3.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s7.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s8.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s9.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s10.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s11.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s12.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s13.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s15.png'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s16.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s17.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s18.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s19.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/s20.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/WhatsApp%20Image%202026-09-06%20at%2020.49.31%20(1).jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/WhatsApp%20Image%202026-09-06%20at%2020.49.31.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/WhatsApp%20Image%202026-09-06%20at%2020.49.32.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/WhatsApp%20Image%202026-09-07%20at%2006.03.45.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/sumbing/WhatsApp%20Image%202026-09-07%20at%2006.03.46.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                    </div>
+                    <div class="memory-story-frame"></div>
+                </div>
+
+                <!-- Edisi 3: Gunung Salak (Text Left, Image Right) -->
+                <div class="memory-story-row fade-up" data-number="03">
+                    <div class="memory-story-text">
+                        <h3>/2180 mdpl.</h3>
+                        <div class="story-scroll-container">
+                            <div class="story-scroll-inner">
+                                <p>— sabarin der —</p>
+                            </div>
+                            <div class="story-scroll-fade-top"></div>
+                            <div class="story-scroll-fade"></div>
+                        </div>
+                    </div>
+                    <div class="reveal-wrapper">
+                        <div class="memory-story-image slide-img active parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.03.45%20(1).jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.04.30.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.04.31.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.04.34.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.06.40.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.06.41.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.06.42%20(1).jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.06.42.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.06.43.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.08.26.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.14.50.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="memory-story-image slide-img parallax-img"
+                            style="background-image: url('images/memories/salak/WhatsApp%20Image%202026-09-07%20at%2006.14.51.jpeg'); background-size: cover; background-position: center;">
+                        </div>
+                    </div>
+                    <div class="memory-story-frame"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Quote / Filosofi -->
+        <section class="philosophy" style="background-image: url('images/quote-bg/bg.jpg');">
+            <div class="philosophy-content fade-up">
+                <blockquote>
+                    “Gunung tercipta bukan agar kita bisa menaklukkan puncaknya. Gunung tercipta agar kita mampu
+                    menaklukkan ego kita sendiri.”
+                </blockquote>
+                <cite>— Fiersa Besari</cite>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 TheArchive. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox for Gallery -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox"><i data-lucide="x"></i></span>
+        <div class="lightbox-content">
+            <div class="lightbox-img image-placeholder" data-label="[FOTO FULLSCREEN]"></div>
+            <p class="lightbox-caption">Caption</p>
+        </div>
+    </div>
+
+    <script src="script.js?v=6"></script>
+</body>
+
+</html>
