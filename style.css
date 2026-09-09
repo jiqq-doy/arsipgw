@@ -275,7 +275,7 @@ h4,
 
 /* Background layer belakang: gerak paling lambat */
 .track-slow {
-    animation: marqueeBg 75s linear infinite;
+    animation: marqueeBg 50s linear infinite;
     opacity: 0.6;
 }
 
@@ -288,7 +288,7 @@ h4,
 
 /* Background layer utama: gerak sedikit lebih cepat */
 .track-fast {
-    animation: marqueeBg 50s linear infinite;
+    animation: marqueeBg 30s linear infinite;
     opacity: 0.8;
 }
 
@@ -478,6 +478,7 @@ h4,
         transform: translate(-50%, 0);
         opacity: 1;
     }
+
     100% {
         transform: translate(-50%, 15px);
         opacity: 0;
@@ -792,14 +793,7 @@ h4,
 
 /* Independent Frame Border without wrapping */
 .memory-story-frame {
-    position: absolute;
-    width: 38%;
-    aspect-ratio: 4/5;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    top: 50%;
-    z-index: 0;
-    pointer-events: none;
-    transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+    display: none;
 }
 
 /* Image on right - offset to right and top */
@@ -814,12 +808,12 @@ h4,
     transform: translateY(calc(-50% - 20px));
 }
 
-/* Vignette overlay — smooth fading in from edges */
+/* Vignette overlay — tipis aja di pinggir biar samar sama background */
 .reveal-wrapper::before {
     content: '';
     position: absolute;
     inset: 0;
-    box-shadow: inset 0 0 100px 40px #080808, inset 0 0 40px 10px rgba(8, 8, 8, 0.8);
+    box-shadow: inset 0 0 15px 2px #080808;
     z-index: 5;
     pointer-events: none;
 }
@@ -847,7 +841,7 @@ h4,
     position: absolute;
     top: 0;
     left: 0;
-    transform: scale(1.15);
+    /* transform: scale(1.15); Dihapus agar pinggiran polaroid tidak terpotong */
     transition: transform 0.1s ease-out;
 }
 
